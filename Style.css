@@ -1,0 +1,351 @@
+*, html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  font-family: Georgia;
+  background-color: #45f058;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  margin-bottom: 20px;
+}
+
+.content.opacity {
+  display: none;
+}
+
+sidebar {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  height: 85vh;
+  overflow: hidden;
+  transition: transform .18s ease;
+  transform: translateX(-100%);
+}
+
+sidebar.active {
+  transition: none;
+  transform: translateX(0);
+}
+
+sidebar .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+sidebar .top h1 {
+  background: #000;
+  width: 20%;
+  height: 40px;
+  color: white;
+  border-radius: 20px;
+  padding: 3px;
+  font-family: Georgia;
+  text-align: center;
+}
+
+.side {
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.side .list {
+  border-bottom: 2px solid;
+  margin-bottom: 1.5rem;
+}
+
+.side .list a {
+  display: flex;
+  color: #000;
+  margin: 1rem;
+  font-size: 1.2rem;
+  font-weight: 410;
+}
+
+.side .list i {
+  margin-right: 2rem;
+  font-size: 1.4rem;
+}
+
+.side button {
+  border: none;
+  border-radius: 20px;
+  background: #45f058;
+  width: 100%;
+  height: 40px;
+  font-size: 1.3rem;
+  font-weight: 420;
+  margin-top: 1rem;
+}
+
+.login-register {
+  text-align: center;
+  margin-top: 30px;
+  
+}
+
+.login-register p a {
+  color: #45f058;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+.nav-icons i {
+  border: none;
+  color: black;
+  font-size: 30px;
+  background: #45f058;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all .50s ease;
+}
+
+.nav-icons i:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+.btn-nav {
+  display: flex;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.nav-button i {
+  font-size: 40px;
+}
+
+.close-button {
+  display: none;
+}
+
+.close-button i {
+  font-size: 40px;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.container {
+  font-family: Georgia;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  align-items: center;
+  height: 200px;
+  width: 145px;
+  padding: 15px;
+  margin: 15px;
+  transition: all .40s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card:hover {
+  width: 148px;
+  box-shadow: #ff9f0d 0 1px 25px;
+  transform: scale(1.1);
+}
+
+.card img {
+   height: 150px;
+   width: 150px;
+   border-bottom: 1px solid #e0dede;
+ }
+ 
+.nama {
+   margin-right: auto;
+ }
+ 
+.opening {
+  text-align: center;
+}
+
+.opening h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: Georgia;
+}
+
+.opening h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.about {
+  margin-left: 15px;
+}
+
+.about h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+.about p {
+  margin-top: 25px;
+  line-height: 1.2em;
+  margin-bottom: 35px;
+}
+
+.about a {
+  text-decoration: none;
+  background: #000;
+  color: #45f058;
+  font-size: 1rem;
+  padding: 15px 35px;
+  border-radius: 3rem;
+  transition: all .50s ease;
+}
+
+.about a:hover {
+  background: #45f058;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.add {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 40px;
+}
+
+.add input {
+  border: none;
+  outline: none;
+  border-bottom: 1.5px solid;
+  width: 100%;
+  font-size: 1.2em;
+  font-weight: 450;
+  margin-bottom: 45px;
+}
+
+.addBarcode label {
+  position: absolute;
+  top: 9.5rem;
+  font-weight: 405;
+  color: #4d4d4d;
+}
+
+.addBarcode input {
+  width: 75%;
+}
+
+.addBarcode i {
+  background: black;
+  color: white;
+  border-radius: 30%;
+  margin-left: 1.5rem;
+  font-size: 2rem;
+  padding: 6px;
+  cursor: pointer;
+  transition: all .50s ease;
+}
+
+.addBarcode i:hover {
+  background: #45f058;
+  color: black;
+  box-shadow: #45f058 0 1px 25px;
+  transform: scale(1.1);
+}
+
+.addJumlah label {
+  position: absolute;
+  top: 20.5rem;
+  font-weight: 405;
+  color: #4d4d4d;
+}
+
+.addJumlah input {
+  width: 50%;
+}
+
+.addJumlah i {
+  margin-left: 1.5rem;
+  font-size: 3rem;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: all .50s ease;
+}
+
+.addMasuk label {
+  position: absolute;
+  top: 27rem;
+  font-weight: 405;
+  color: #4d4d4d;
+  margin-left: 1.7rem;
+}
+
+.addMasuk input {
+  width: 7em;
+  margin-left: 1.7rem;
+  margin-top: 2rem;
+}
+
+.addHarga label {
+  position: absolute;
+  top: 33rem;
+  font-weight: 405;
+  margin-left: 1.2rem;
+}
+
+.addHarga input {
+  width: 40%;
+  margin-left: 1.2rem;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    margin-right: 0;
+  }
+  
+  li {
+    padding: 3px 8px;
+  }
+  
+  .wrapper {
+    flex-wrap: wrap;
+  }
+  
+  .card img {
+    height: 110px;
+    width: 110px;
+  }
+  
+  .nama {
+    margin-top: 15px;
+  }
+}
+
